@@ -1,8 +1,14 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica,
-    Arial, sans-serif;
-  line-height: 1.5em;
+:root {
+  --default-font: @defaultFont;
+}
+
+* {
+  font-family: var(--default-font);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  line-height: 1.5em;
 }
