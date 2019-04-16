@@ -1,0 +1,8 @@
+.delay(@counter, @time) when (@counter > 0) {
+  .delay((@counter - 1), @time);
+
+  &:nth-child(@{counter}) {
+    @delay: 0 + (@counter * @time);
+    transition-delay: ~'@{delay}s !important';
+  }
+}

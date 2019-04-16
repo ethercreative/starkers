@@ -1,0 +1,225 @@
+.content {
+  *:first-child {
+    margin-top: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 20px;
+  font-weight: 500;
+  line-height: 1em;
+
+  @media @tablet {
+    margin-top: 15px;
+  }
+
+  @media @mobile {
+    margin-top: 10px;
+  }
+
+  &.small-margin {
+    margin-top: 10px;
+
+    @media @tablet {
+      margin-top: 7px;
+    }
+
+    @media @mobile {
+      margin-top: 5px;
+    }
+  }
+
+  &.no-margin {
+    margin-top: 0;
+  }
+
+  &.normal {
+    font-weight: 400;
+  }
+
+  &.line-height {
+    line-height: 1.2em;
+  }
+
+  &.big-line-height {
+    line-height: 1.4em;
+  }
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 64px;
+
+  span.inline {
+    font-size: 40px;
+    line-height: 1em;
+  }
+}
+
+h3 {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 26px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p,
+li {
+  font-size: 18px;
+
+  &.tiny {
+    font-size: 12px;
+  }
+
+  &.small {
+    font-size: 14px;
+  }
+
+  &.medium {
+    font-size: 16px;
+  }
+
+  &.big {
+    font-size: 20px;
+  }
+
+  &.huge {
+    font-size: 22px;
+  }
+
+  &.small-line-height {
+    line-height: 1.5em;
+  }
+
+  a:not(.no-underline):hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin-top: 15px;
+  line-height: 1.8em;
+
+  &.small-margin {
+    margin-top: 5px;
+  }
+
+  &.medium-margin {
+    margin-top: 10px;
+  }
+
+  &.no-margin {
+    margin-top: 0;
+  }
+}
+
+ul,
+ol {
+  padding: 20px 0 0 20px;
+
+  &.no-padding {
+    padding: 0;
+  }
+
+  li {
+    margin-top: 5px;
+    list-style: disc;
+    line-height: 1.5em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &.big-margin {
+      margin-top: 10px;
+    }
+  }
+
+  &.no-list li {
+    list-style: none;
+  }
+}
+
+ol li {
+  list-style: decimal;
+}
+
+span,
+small {
+  &.block {
+    line-height: 1em;
+  }
+
+  &.line-height {
+    line-height: 1.5em;
+  }
+}
+
+small {
+  font-size: 10px;
+}
+
+.semi {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.upper {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.capitals {
+  text-transform: capitalize;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &.underline:hover {
+    text-decoration: underline;
+  }
+}

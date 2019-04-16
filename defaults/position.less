@@ -1,0 +1,73 @@
+div {
+  position: relative;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.fill() {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.fill {
+  .fill();
+
+  &.left {
+    right: auto;
+  }
+
+  &.right {
+    left: auto;
+  }
+
+  &.top {
+    bottom: auto;
+  }
+
+  &.bottom {
+    top: auto;
+  }
+}
+
+@media @desktop {
+  .desktop-fill {
+    .fill();
+  }
+}
+
+@media @tablet {
+  .tablet-fill {
+    .fill();
+  }
+}
+
+@media @mobile {
+  .mobile-fill {
+    .fill();
+  }
+}
+
+.z-index {
+  z-index: 100;
+}

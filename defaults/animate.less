@@ -1,0 +1,31 @@
+.preload * {
+  transition: 0s !important;
+}
+
+.animate:not(.custom) {
+  opacity: 0;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+
+  @amount: 20px;
+
+  &.animate-left {
+    transform: translate3d(-@amount, 0, 0);
+  }
+
+  &.animate-right {
+    transform: translate3d(@amount, 0, 0);
+  }
+
+  &.animate-top {
+    transform: translate3d(0, -@amount, 0);
+  }
+
+  &.animate-bottom {
+    transform: translate3d(0, @amount, 0);
+  }
+
+  &.active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
