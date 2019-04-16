@@ -1,4 +1,4 @@
-.content {
+.text {
   *:first-child {
     margin-top: 0;
   }
@@ -12,7 +12,7 @@ h5,
 h6 {
   margin-top: 20px;
   font-weight: 500;
-  line-height: 1em;
+  line-height: 1.2em;
 
   @media @tablet {
     margin-top: 15px;
@@ -22,7 +22,7 @@ h6 {
     margin-top: 10px;
   }
 
-  &.small-margin {
+  &.mar-s {
     margin-top: 10px;
 
     @media @tablet {
@@ -34,20 +34,12 @@ h6 {
     }
   }
 
-  &.no-margin {
+  &.mar-no {
     margin-top: 0;
   }
 
-  &.normal {
+  &.reg {
     font-weight: 400;
-  }
-
-  &.line-height {
-    line-height: 1.2em;
-  }
-
-  &.big-line-height {
-    line-height: 1.4em;
   }
 }
 
@@ -57,11 +49,6 @@ h1 {
 
 h2 {
   font-size: 64px;
-
-  span.inline {
-    font-size: 40px;
-    line-height: 1em;
-  }
 }
 
 h3 {
@@ -84,48 +71,23 @@ p,
 li {
   font-size: 18px;
 
-  &.tiny {
-    font-size: 12px;
-  }
-
-  &.small {
-    font-size: 14px;
-  }
-
-  &.medium {
-    font-size: 16px;
-  }
-
-  &.big {
-    font-size: 20px;
-  }
-
-  &.huge {
-    font-size: 22px;
-  }
-
-  &.small-line-height {
-    line-height: 1.5em;
-  }
-
-  a:not(.no-underline):hover {
+  a:hover {
     text-decoration: underline;
   }
 }
 
 p {
   margin-top: 15px;
-  line-height: 1.8em;
 
-  &.small-margin {
+  &.mar-s {
     margin-top: 5px;
   }
 
-  &.medium-margin {
+  &.mar-m {
     margin-top: 10px;
   }
 
-  &.no-margin {
+  &.mar-no {
     margin-top: 0;
   }
 }
@@ -134,7 +96,7 @@ ul,
 ol {
   padding: 20px 0 0 20px;
 
-  &.no-padding {
+  &.pad-no {
     padding: 0;
   }
 
@@ -147,7 +109,7 @@ ol {
       margin-top: 0;
     }
 
-    &.big-margin {
+    &.mar-b {
       margin-top: 10px;
     }
   }
@@ -163,12 +125,8 @@ ol li {
 
 span,
 small {
-  &.block {
+  &.dis-b {
     line-height: 1em;
-  }
-
-  &.line-height {
-    line-height: 1.5em;
   }
 }
 
@@ -219,7 +177,7 @@ a {
   color: inherit;
   text-decoration: none;
 
-  &.underline:hover {
+  &.line:hover {
     text-decoration: underline;
   }
 }
