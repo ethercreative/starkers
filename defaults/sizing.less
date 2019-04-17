@@ -6,7 +6,7 @@
   height: 100%;
 }
 
-.a-square {
+.a-sq {
   padding-bottom: 100%;
 }
 
@@ -78,52 +78,38 @@
     flex-direction: row-reverse;
   }
 
-  &.space-between {
+  &.between {
     justify-content: space-between;
 
-    &.vertical {
+    &.vert {
       align-content: space-between;
     }
   }
 
-  &.space-around {
+  &.around {
     justify-content: space-around;
 
-    &.vertical {
+    &.vert {
       align-content: space-around;
     }
   }
 
-  &.justify-end {
+  &.end {
     justify-content: flex-end;
   }
 
-  &.flex-start {
-    align-items: flex-start;
-  }
-
-  &.no-justify {
-    justify-content: normal;
-  }
-
-  &.no-wrap {
+  &.nowrap {
     flex-wrap: nowrap;
   }
 
-  @media @mobile {
-    &.mobile-reverse {
-      flex-flow: column-reverse;
-    }
-  }
-
-  &.margins {
+  &.mars {
     margin: -20px 0 0 -20px;
 
     &.small {
       margin: -10px 0 0 -10px;
     }
 
-    &.zero-top {
+    &.no-top {
       margin-top: 0;
     }
 
@@ -138,237 +124,157 @@
     }
   }
 
+  @media @mobile {
+    &.mob-rev {
+      flex-flow: column-reverse;
+    }
+  }
+
   .grow {
     flex: 1;
   }
 
-  > * {
-    box-sizing: border-box;
+  .s-16 {
+    flex-basis: 16.667%;
+  }
 
-    &.full {
-      flex: 0 0 100%;
-      flex-basis: 100%;
-      max-width: 100%;
+  .s-20 {
+    flex-basis: 20%;
+  }
+
+  .s-25 {
+    flex-basis: 25%;
+  }
+
+  .s-33 {
+    flex-basis: 33.333%;
+  }
+
+  .s-40 {
+    flex-basis: 40%;
+  }
+
+  .s-60 {
+    flex-basis: 60%;
+  }
+
+  .s-50 {
+    flex-basis: 50%;
+  }
+
+  .s-66 {
+    flex-basis: 66.667%;
+  }
+
+  .s-75 {
+    flex-basis: 75%;
+  }
+
+  .s-80 {
+    flex-basis: 80%;
+  }
+
+  .s-100 {
+    flex-basis: 100%;
+  }
+
+  @media @tablet {
+    .tab-grow {
+      flex: 1;
     }
 
-    &.half {
-      flex: 0 0 50%;
-      flex-basis: 50%;
-      max-width: 50%;
-    }
-
-    &.two-thirds {
-      flex: 0 0 66.667%;
-      flex-basis: 66.667%;
-      max-width: 66.667%;
-    }
-
-    &.third {
-      flex: 0 0 33.333%;
-      flex-basis: 33.333%;
-      max-width: 33.333%;
-    }
-
-    &.quarter {
-      flex: 0 0 25%;
-      flex-basis: 25%;
-      max-width: 25%;
-    }
-
-    &.three-quarters {
-      flex: 0 0 75%;
-      flex-basis: 75%;
-      max-width: 75%;
-    }
-
-    &.fifth {
-      flex: 0 0 20%;
-      flex-basis: 20%;
-      max-width: 20%;
-    }
-
-    &.two-fifths {
-      flex: 0 0 40%;
-      flex-basis: 40%;
-      max-width: 40%;
-    }
-
-    &.three-fifths {
-      flex: 0 0 60%;
-      flex-basis: 60%;
-      max-width: 60%;
-    }
-
-    &.four-fifths {
-      flex: 0 0 80%;
-      flex-basis: 80%;
-      max-width: 80%;
-    }
-
-    &.eighth {
-      flex: 0 0 12.5%;
-      flex-basis: 12.5%;
-      max-width: 12.5%;
-    }
-
-    &.fourteenth {
-      flex: 0 0 7.14285714%;
-      flex-basis: 7.14285714%;
-      max-width: 7.14285714%;
-    }
-
-    &.sixth {
-      flex: 0 0 16.667%;
+    .tab-s-16 {
       flex-basis: 16.667%;
-      max-width: 16.667%;
     }
 
-    @media @tablet {
-      &.tablet-full {
-        flex: 0 0 100%;
-        flex-basis: 100%;
-        max-width: 100%;
-      }
-
-      &.tablet-half {
-        flex: 0 0 50%;
-        flex-basis: 50%;
-        max-width: 50%;
-      }
-
-      &.tablet-two-thirds {
-        flex: 0 0 66.667%;
-        flex-basis: 66.667%;
-        max-width: 66.667%;
-      }
-
-      &.tablet-third {
-        flex: 0 0 33.333%;
-        flex-basis: 33.333%;
-        max-width: 33.333%;
-      }
-
-      &.tablet-quarter {
-        flex: 0 0 25%;
-        flex-basis: 25%;
-        max-width: 25%;
-      }
-
-      &.tablet-three-quarters {
-        flex: 0 0 75%;
-        flex-basis: 75%;
-        max-width: 75%;
-      }
-
-      &.tablet-fifth {
-        flex: 0 0 20%;
-        flex-basis: 20%;
-        max-width: 20%;
-      }
-
-      &.tablet-two-fifths {
-        flex: 0 0 40%;
-        flex-basis: 40%;
-        max-width: 40%;
-      }
-
-      &.tablet-three-fifths {
-        flex: 0 0 60%;
-        flex-basis: 60%;
-        max-width: 60%;
-      }
-
-      &.tablet-four-fifths {
-        flex: 0 0 80%;
-        flex-basis: 80%;
-        max-width: 80%;
-      }
-
-      &.tablet-eighth {
-        flex: 0 0 12.5%;
-        flex-basis: 12.5%;
-        max-width: 12.5%;
-      }
-
-      &.tablet-fourteenth {
-        flex: 0 0 7.14285714%;
-        flex-basis: 7.14285714%;
-        max-width: 7.14285714%;
-      }
+    .tab-s-20 {
+      flex-basis: 20%;
     }
 
-    @media @mobile {
-      &.mobile-full {
-        flex: 0 0 100%;
-        flex-basis: 100%;
-        max-width: 100%;
-      }
+    .tab-s-25 {
+      flex-basis: 25%;
+    }
 
-      &.mobile-half {
-        flex: 0 0 50%;
-        flex-basis: 50%;
-        max-width: 50%;
-      }
+    .tab-s-33 {
+      flex-basis: 33.333%;
+    }
 
-      &.mobile-two-thirds {
-        flex: 0 0 66.667%;
-        flex-basis: 66.667%;
-        max-width: 66.667%;
-      }
+    .tab-s-40 {
+      flex-basis: 40%;
+    }
 
-      &.mobile-third {
-        flex: 0 0 33.333%;
-        flex-basis: 33.333%;
-        max-width: 33.333%;
-      }
+    .tab-s-60 {
+      flex-basis: 60%;
+    }
 
-      &.mobile-quarter {
-        flex: 0 0 25%;
-        flex-basis: 25%;
-        max-width: 25%;
-      }
+    .tab-s-50 {
+      flex-basis: 50%;
+    }
 
-      &.mobile-three-quarters {
-        flex: 0 0 75%;
-        flex-basis: 75%;
-        max-width: 75%;
-      }
+    .tab-s-66 {
+      flex-basis: 66.667%;
+    }
 
-      &.mobile-fifth {
-        flex: 0 0 20%;
-        flex-basis: 20%;
-        max-width: 20%;
-      }
+    .tab-s-75 {
+      flex-basis: 75%;
+    }
 
-      &.mobile-two-fifths {
-        flex: 0 0 40%;
-        flex-basis: 40%;
-        max-width: 40%;
-      }
+    .tab-s-80 {
+      flex-basis: 80%;
+    }
 
-      &.mobile-three-fifths {
-        flex: 0 0 60%;
-        flex-basis: 60%;
-        max-width: 60%;
-      }
+    .tab-s-100 {
+      flex-basis: 100%;
+    }
+  }
 
-      &.mobile-four-fifths {
-        flex: 0 0 80%;
-        flex-basis: 80%;
-        max-width: 80%;
-      }
+  @media @tablet {
+    .mob-grow {
+      flex: 1;
+    }
 
-      &.mobile-eighth {
-        flex: 0 0 12.5%;
-        flex-basis: 12.5%;
-        max-width: 12.5%;
-      }
+    .mob-s-16 {
+      flex-basis: 16.667%;
+    }
 
-      &.mobile-fourteenth {
-        flex: 0 0 7.14285714%;
-        flex-basis: 7.14285714%;
-        max-width: 7.14285714%;
-      }
+    .mob-s-20 {
+      flex-basis: 20%;
+    }
+
+    .mob-s-25 {
+      flex-basis: 25%;
+    }
+
+    .mob-s-33 {
+      flex-basis: 33.333%;
+    }
+
+    .mob-s-40 {
+      flex-basis: 40%;
+    }
+
+    .mob-s-60 {
+      flex-basis: 60%;
+    }
+
+    .mob-s-50 {
+      flex-basis: 50%;
+    }
+
+    .mob-s-66 {
+      flex-basis: 66.667%;
+    }
+
+    .mob-s-75 {
+      flex-basis: 75%;
+    }
+
+    .mob-s-80 {
+      flex-basis: 80%;
+    }
+
+    .mob-s-100 {
+      flex-basis: 100%;
     }
   }
 }
