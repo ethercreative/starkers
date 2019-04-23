@@ -1,28 +1,25 @@
-.text {
-  *:first-child {
-    margin-top: 0;
-  }
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin-top: 20px;
   font-weight: 700;
   line-height: 1.2em;
 
-  @media @tablet {
-    margin-top: 15px;
+  + * {
+    margin-top: 20px;
+
+    @media @tablet {
+      margin-top: 15px;
+    }
+
+    @media @mobile {
+      margin-top: 10px;
+    }
   }
 
-  @media @mobile {
-    margin-top: 10px;
-  }
-
-  &.mar-s {
+  &.mar-s + * {
     margin-top: 10px;
 
     @media @tablet {
@@ -34,7 +31,7 @@ h6 {
     }
   }
 
-  &.no-mar {
+  &.no-mar + * {
     margin-top: 0;
   }
 
@@ -76,7 +73,7 @@ li {
   }
 }
 
-p {
+* + p {
   margin-top: 15px;
 
   &.mar-s {
