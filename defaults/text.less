@@ -38,7 +38,7 @@ h6 {
     }
   }
 
-  &.mar-s + * {
+  &.mar-s {
     margin-top: 10px;
 
     @media @tablet {
@@ -50,12 +50,12 @@ h6 {
     }
   }
 
-  &.no-mar + * {
+  &.no-mar {
     margin-top: 0;
   }
 
-  &.reg {
-    font-weight: 400;
+  &:empty {
+    display: none;
   }
 }
 
@@ -89,6 +89,10 @@ li {
 
   a:hover {
     text-decoration: underline;
+  }
+
+  &:empty {
+    display: none;
   }
 }
 
@@ -148,6 +152,10 @@ small {
 
 small {
   font-size: 0.75em;
+}
+
+.reg {
+  font-weight: 400;
 }
 
 .semi {
