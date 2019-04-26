@@ -2,6 +2,14 @@
   --fontFamily: @fontFamily;
   --font-size: @fontSize;
   --colour: @colour;
+
+  @media @tablet {
+    --font-size: @tabletFontSize;
+  }
+
+  @media @mobile {
+    --font-size: @mobileFontSize;
+  }
 }
 
 * {
