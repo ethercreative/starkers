@@ -1,5 +1,5 @@
 :root {
-  --fontFamily: @fontFamily;
+  --font-family: @fontFamily;
   --font-size: @fontSize;
   --colour: @colour;
 
@@ -69,26 +69,74 @@ h6 {
 
 h1 {
   font-size: 3.4em;
+
+  @media @tablet {
+    font-size: 2.8em;
+  }
+
+  @media @mobile {
+    font-size: 2.2em;
+  }
 }
 
 h2 {
   font-size: 3em;
+
+  @media @tablet {
+    font-size: 2.5em;
+  }
+
+  @media @mobile {
+    font-size: 2em;
+  }
 }
 
 h3 {
   font-size: 2.6em;
+
+  @media @tablet {
+    font-size: 2.2em;
+  }
+
+  @media @mobile {
+    font-size: 1.8em;
+  }
 }
 
 h4 {
   font-size: 2.2em;
+
+  @media @tablet {
+    font-size: 1.9em;
+  }
+
+  @media @mobile {
+    font-size: 1.6em;
+  }
 }
 
 h5 {
   font-size: 1.8em;
+
+  @media @tablet {
+    font-size: 1.6em;
+  }
+
+  @media @mobile {
+    font-size: 1.4em;
+  }
 }
 
 h6 {
   font-size: 1.4em;
+
+  @media @tablet {
+    font-size: 1.3em;
+  }
+
+  @media @mobile {
+    font-size: 1.2em;
+  }
 }
 
 p,
@@ -199,6 +247,10 @@ small {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.norm {
+  text-transform: none;
 }
 
 .nowrap {
